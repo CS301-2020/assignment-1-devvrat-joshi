@@ -22,7 +22,7 @@ void print_info(){      // starting shell
     time(&t);
     printf("\nAssignment 1 Terminal devsh: %s", ctime(&t));
     printf("Author: Devvrat Joshi\n");
-    printf("\033[1;36mFor help, type help and press return. To exit, type quit and press return.\033[0m\n");
+    printf("\033[1;36mTo exit, type quit and press enter.\033[0m\n");
 }
 
 void print_exit(){      // exiting shell
