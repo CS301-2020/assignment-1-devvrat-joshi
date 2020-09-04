@@ -1,13 +1,12 @@
 #include<stdio.h>           
-#include<sys/wait.h>
-#include<sys/stat.h>
-#include<dirent.h>
-#include<unistd.h>
-#include<stdlib.h>
-#include<errno.h>
-#include<time.h>
-#include<string.h>
-#include<sys/mman.h>
+#include<sys/wait.h>        // wait
+#include<sys/stat.h>        // stat
+#include<dirent.h>          // readdir, opendir, closedir
+#include<unistd.h>          // fork exec
+#include<stdlib.h>          // malloc
+#include<errno.h>           // errno
+#include<time.h>            // time
+#include<string.h>          // strlen, strcpy, strcat
 #define MAX_LEN 15
 
 char path[1000];            // global variable current directory path

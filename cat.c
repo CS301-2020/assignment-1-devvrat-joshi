@@ -22,6 +22,7 @@ int main(int argc, char *argv[]){                       // main function starts 
         printf("\033[1;36mPrinting File: %s\033[0m\n",argv[i]);
         while(getline(&line,&l,fp)>=0)printf("%s",line); // print the complete file
         printf("\n\n");
+        fclose(fp);
     }
     return EXIT_SUCCESS;
 }

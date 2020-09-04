@@ -63,6 +63,8 @@ int main(int argc, char *argv[]){
         }
         while(getline(&line,&l,fp)>=0)fprintf(dp,"%s",line);    // copy file
         printf("\033[1;36mCopied Successfully: %s\033[0m\n",argv[i]);       
+        fclose(fp);
+        fclose(dp);
     }
     return EXIT_SUCCESS;
 }
@@ -129,6 +131,8 @@ void dir_copy(int argc, char **argv){
                     }
                     while(getline(&line,&l,fp)>=0)fprintf(dp,"%s",line);    // copy file
                     printf("\033[1;36mCopied Successfully: %s\033[0m\n",dnt->d_name);
+                    fclose(fp);
+                    fclose(dp);
                 }
             }
         }   

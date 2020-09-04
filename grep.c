@@ -38,6 +38,7 @@ int main(int argc, char *argv[]){                       // main function starts
             findpattern(line,pattern,size,line_nos,p);
         }
         printf("\n\n");                                                     // if next file starts, then give 2 line breaks
+        fclose(fp);
     }
     return EXIT_SUCCESS;
 }
