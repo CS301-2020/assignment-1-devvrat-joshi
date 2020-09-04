@@ -3,6 +3,10 @@
 void findpattern(char *line, char *pattern, int size, int line_nos,int p);
 
 int main(int argc, char *argv[]){                       // main function starts
+    if(argc<=2){                            // argv[0] = grep and argv[1] = (path):shell.c passed this argument
+        printf("\033[1;31mgrep [pattern] [filepath|(nothing)]\033[0m\n");
+        exit(0);
+    }
     FILE *fp;                                           // file pointer
     char *line;                                         // pointer to a line 
     long unsigned int l = 0;                            // length of a line

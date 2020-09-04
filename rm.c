@@ -33,6 +33,10 @@ void recurse(char *path){           // takes path and deletes everything in that
 }
 
 int main(int argc, char* argv[]){                                   // main function starts here
+    if(argc<=2){                            // argv[0] = rm and argv[1] = (path):shell.c passed this argument
+        printf("\033[1;31mrm [option] [filepath|dirpath]\033[0m\n");
+        exit(0);
+    }
     int j=0;                                                        // ensure that the argument has no trailing \n
     while(argv[1][j]!='\0'&&argv[1][j]!='\n'&&argv[1][j]!=' ')j++;
     argv[1][j] = '\0';

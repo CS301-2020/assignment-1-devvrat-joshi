@@ -2,7 +2,7 @@
 
 int main(int argc, char *argv[]){       // main function starts here
     if(argc<4){
-        printf("\033[1;33mmv [source file|directory] [destination directory]\n");
+        printf("\033[1;31mmv [source file|directory] [destination directory]\n");
     }
     FILE *fp;                           // file pointers
     int j=0;                            // ensuring that the destination path has no trailing \n

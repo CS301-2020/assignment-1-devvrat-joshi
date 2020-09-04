@@ -1,6 +1,10 @@
 #include "dependencies.h"                   // dependencies
 
 int main(int argc, char *argv[]){           // main function starts here
+    if(argc<=2){                            // argv[0] = chmod and argv[1] = (path):shell.c passed this argument
+        printf("\033[1;31mchmod [mode] [filepath]\033[0m\n");
+        exit(0);
+    }
     if(strlen(argv[1])!=3){                 // if the argument for chmod is different length then 3
         printf("\033[1;31mchmod : Wrong Mode : %s\n",argv[1]);  
         return EXIT_SUCCESS;                
