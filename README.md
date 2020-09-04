@@ -7,4 +7,4 @@ An example Makefile is provided. Modify it to compile your shell. Dummy files sh
 ### Has some extra functionality:
 #### If you make your new custom command, then just name the binary of that command as custom{{command}} and you need not to edit anything in the shell.c file
 #### Checked on Windows Subsystem for Linux , distro : Ubuntu 20.04 LTS
-#### Ubuntu 18.04 LTS
+#### Checked on virtual box, OS : Ubuntu 18.04 LTS
