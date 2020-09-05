@@ -83,6 +83,7 @@ void execute_command(char *command, char *get_stdin, char *mybinaries_path, int 
             error = execvp(command,args);  // execute is as inbuilt binary with error containing the exit status
         }
         if(error==-1)fprintf(stderr,"\033[1;31mCommand not found : process not created : %d\n\033[0m", errno); 
+        exit(0);    // exit child process
     }
     else{
         // parent, shell.c (main process)
